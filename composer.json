@@ -1,0 +1,30 @@
+{
+  "name": "jncinet/qihucms-carousel",
+  "description": "qihucms carousel.",
+  "keywords": [
+    "laravel",
+    "qihucms",
+    "carousel"
+  ],
+  "homepage": "https://www.qihucms.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhangye",
+      "email": "y@qilephp.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Qihucms\\Carousel\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Qihucms\\Carousel\\CarouselServiceProvider"
+      ]
+    }
+  }
+}
