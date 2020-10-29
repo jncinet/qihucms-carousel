@@ -13,7 +13,9 @@ class CarouselServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton('carousel', function () {
+            return new Carousel();
+        });
     }
 
     /**
