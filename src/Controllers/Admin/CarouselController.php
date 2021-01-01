@@ -68,7 +68,7 @@ class CarouselController extends Controller
         $show->field('id', __('carousel::carousel.id'));
         $show->field('carousel_category_id', __('carousel::carousel.carousel_category_id'))
             ->as(function () {
-                return $this->category->name ?? '未设置';
+                return $this->category->name ?? '';
             });
         $show->field('title', __('carousel::carousel.title'));
         $show->field('url', __('carousel::carousel.url'))->link();

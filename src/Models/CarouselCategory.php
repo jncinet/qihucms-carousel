@@ -12,7 +12,7 @@ class CarouselCategory extends Model
     /**
      * @return HasMany
      */
-    public function carousel() : HasMany
+    public function carousels() : HasMany
     {
         return $this->hasMany('Qihucms\Carousel\Models\Carousel');
     }

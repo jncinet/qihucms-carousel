@@ -13,7 +13,7 @@ class CarouselServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('carousel', function () {
+        $this->app->singleton(Carousel::class, function () {
             return new Carousel();
         });
     }
@@ -33,6 +33,6 @@ class CarouselServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/../resources/lang' => resource_path('lang/vendor/carousel'),
-        ], 'carousel');
+        ]);
     }
 }
